@@ -14,10 +14,10 @@
    ============================= */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+   v2.0 | 20110126 | License: Public Domain 
 */
 
+/* ====== Reset CSS (Meyer Reset) ====== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,80 +31,79 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* Main CSS Styling */
-
+/* ====== Basic Page Styles ====== */
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
+  color: #333333;
   padding: 0;
   margin: 0;
+  line-height: 1.6;
 }
 
+/* ====== Header ====== */
 header {
   background-color: #e0e0e0;
-  padding: 20px 0;
   text-align: center;
+  padding: 20px;
 }
 
 header h1 {
-  color: #0c3054;
   font-size: 2em;
+  color: #0c3054;
 }
 
-header p {
-  font-weight: bold;
-}
-
+/* ====== Section Headings ====== */
 h2 {
   color: #0c3054;
   margin: 20px;
 }
 
+/* ====== Overview Section ====== */
 #overview {
-  margin: 0 20px;
-  padding: 15px;
   background-color: #f2f2f2;
+  padding: 15px;
+  margin: 0 20px;
   border-left: 5px solid #0c3054;
 }
 
+/* ====== Gallery ====== */
 #gallery img {
-  max-width: 90%;
   display: block;
+  max-width: 90%;
   margin: 20px auto;
-  border-radius: 10px;
   border: 2px solid #0c3054;
+  border-radius: 10px;
 }
 
 figcaption {
@@ -113,12 +112,14 @@ figcaption {
   margin-bottom: 20px;
 }
 
+/* ====== Quote Section ====== */
 #quote {
-  font-style: italic;
   margin: 0 20px;
+  font-style: italic;
   color: #000;
 }
 
+/* ====== Video Section ====== */
 iframe {
   display: block;
   margin: 20px auto;
@@ -126,21 +127,24 @@ iframe {
   border: none;
 }
 
+/* ====== Explore List ====== */
 ul {
   margin: 0 20px;
   padding-left: 20px;
 }
 
+/* ====== Link Styles ====== */
 a {
   color: blue;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
   color: darkblue;
+  text-decoration: underline;
 }
 
+/* ====== Form Section ====== */
 form {
   margin: 20px;
   padding: 20px;
@@ -150,11 +154,14 @@ form {
 
 label {
   display: block;
-  margin-top: 10px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
-input[type="text"], input[type="email"], textarea, select {
+input[type="text"],
+input[type="email"],
+textarea,
+select {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -162,6 +169,7 @@ input[type="text"], input[type="email"], textarea, select {
   border-radius: 4px;
 }
 
+/* ====== Submit Button ====== */
 button {
   background-color: #0c3054;
   color: white;
@@ -176,20 +184,14 @@ button:hover {
   background-color: #071d33;
 }
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #f2f2f2;
-  font-size: 0.9em;
-}
-
-/* Table Styling */
+/* ====== Table Styling ====== */
 table {
   width: 90%;
   margin: 20px auto;
   border: 1px solid #ccc;
   background-color: #fff;
 }
+
 th, td {
   padding: 10px;
   text-align: left;
@@ -199,5 +201,14 @@ th, td {
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f2f2f2;
+  font-size: 0.9em;
+}
+
 
 
